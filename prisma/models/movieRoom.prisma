@@ -1,0 +1,11 @@
+type MovieRoom implements Node{
+    id:ID! @id
+    createdAt: DateTime! @createdAt
+    updatedAt: DateTime! @updatedAt
+
+    type: String! 
+    movieRoomName: String! 
+    seats: Int! 
+    
+
+}

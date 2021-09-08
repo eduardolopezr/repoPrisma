@@ -1,0 +1,23 @@
+type Drinks implements Node{
+    id: ID! @id
+    createdAt: DateTime! @createdAt
+    updatedAt: DateTime! @updatedAt
+
+    soda{
+        flavor: String! 
+        cost: String!  
+        
+    }
+    natural{
+        type: String! 
+        cost: String!   
+    }
+    coldDrinks{
+        type: String! 
+        cost: String!  
+    }
+    hotDrinks{
+        name: String! 
+        cost: String! 
+    }
+}

@@ -1,0 +1,22 @@
+type Food implements Node{
+    id: ID! @id
+    createdAt: DateTime! @createdAt
+    updatedAt: DateTime! @updatedAt
+
+    popcorns{
+        flavor: String! 
+        cost: String! 
+    }
+    hotdogs{
+        type: String! 
+        cost: String!  
+    }
+    pizza{
+        type: String! 
+        cost: String!   
+    }
+    snacks{
+        name: String! 
+        cost: String!
+    }
+}

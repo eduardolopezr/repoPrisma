@@ -1,0 +1,11 @@
+type Film implements Node{
+    id: ID! @id
+    createdAt: DateTime! @createdAt
+    updatedAt: DateTime! @updatedAt
+
+    title: String! 
+    genre: String! 
+    rating: String! 
+    duration: String! 
+    
+}
