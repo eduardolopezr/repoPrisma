@@ -1,0 +1,19 @@
+type Product implements Node{
+    id: ID! @id
+    createdAt: DateTime! @createdAt
+    updatedAt: DateTime! @updatedAt
+
+    type: ProductType!
+    name: String! 
+    flavor: String
+    size: String
+    price: Int!
+
+}
+enum ProductType{
+
+    FOOD 
+    DRINK
+    CANDY
+
+}

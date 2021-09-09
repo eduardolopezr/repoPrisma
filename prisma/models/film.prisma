@@ -6,6 +6,6 @@ type Film implements Node{
     title: String! 
     genre: String! 
     rating: String! 
-    duration: String! 
+    duration: Int! 
     
 }

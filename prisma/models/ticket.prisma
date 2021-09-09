@@ -1,0 +1,10 @@
+type Ticket implements Node{
+    id: ID! @id
+    createdAt: DateTime! @createdAt
+    updatedAt: DateTime! @updatedAt
+
+
+    order: Order @relation(link: INLINE)
+
+
+}

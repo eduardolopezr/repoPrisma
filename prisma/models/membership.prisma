@@ -1,0 +1,14 @@
+type Membership implements Node{
+    id: ID! @id
+    createdAt: DateTime! @createdAt
+    updatedAt: DateTime! @updatedAt
+
+    type: MembershipType!
+    user: User @relation (link:INLINE)
+
+}
+enum MembershipType{
+    SILVER
+    GOLD
+    PREMIUM
+}

@@ -1,8 +1,11 @@
 type Employee implements Node{
     id:ID! @id
-    createdAt: DateTime! 
-    updatedAt: DateTime! 
+    createdAt: DateTime! @createdAt
+    updatedAt: DateTime! @updatedAt
 
+    numberEmployee: Int!
     name: String! 
     area: String! 
+
+
 }

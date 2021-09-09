@@ -3,9 +3,15 @@ type MovieRoom implements Node{
     createdAt: DateTime! @createdAt
     updatedAt: DateTime! @updatedAt
 
-    type: String! 
-    movieRoomName: String! 
+    type: MovieRoomType! 
+    movieRoomName: Int! 
     seats: Int! 
     
 
+}
+enum MovieRoomType{
+    CUATROD
+    TRESD
+    MACRO
+    IMAX
 }
