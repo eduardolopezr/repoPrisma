@@ -3,8 +3,10 @@ type Order implements Node{
     createdAt: DateTime! @createdAt
     updatedAt: DateTime! @updatedAt
 
-    user: User @relation(link: INLINE)
-    
+    orderNumber: Int!
+    user: User! @relation(link: INLINE)
+
+    ordeState: OrderState!
 
 
 }

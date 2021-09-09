@@ -3,9 +3,9 @@ type Membership implements Node{
     createdAt: DateTime! @createdAt
     updatedAt: DateTime! @updatedAt
 
-    type: MembershipType!
-    user: User @relation (link:INLINE)
-
+    type: MembershipType! 
+    user: User! @relation(name: "User", link: INLINE)
+    
 }
 enum MembershipType{
     SILVER

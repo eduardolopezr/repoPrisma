@@ -4,8 +4,16 @@ type Film implements Node{
     updatedAt: DateTime! @updatedAt
 
     title: String! 
-    genre: String! 
+    genre: GenreType! 
     rating: String! 
     duration: Int! 
     
+}
+enum GenreType{
+    AA
+    A
+    B
+    BFIFTEEN
+    C
+    D
 }

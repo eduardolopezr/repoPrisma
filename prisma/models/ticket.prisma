@@ -3,7 +3,7 @@ type Ticket implements Node{
     createdAt: DateTime! @createdAt
     updatedAt: DateTime! @updatedAt
 
-
+    ticketNumber: Int!
     order: Order @relation(link: INLINE)
 
 
