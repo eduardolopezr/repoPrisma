@@ -10,8 +10,8 @@ type MovieRoom implements Node{
 
 }
 enum MovieRoomType{
-    CUATROD
-    TRESD
+    FOURD
+    THREED
     MACRO
     IMAX
 }
